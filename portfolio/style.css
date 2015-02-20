@@ -1,0 +1,136 @@
+/* Donny Truong Portfolio */
+
+body { 
+font: 100%/1.6 'Raleway', 'Helvetica Neue', Helvetica , Arial, sans-serif;
+background-color:#fff;
+color:#999; 
+padding: 0 1em; 
+margin:0 auto; 
+text-align: left;  
+font-weight:300;
+	}
+
+
+/* Styling links*/
+a { color: #ee2418; text-decoration:none; transition: all .5s ease;}
+a:visited { color: #ee2418; }
+a:hover { color: #000; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+/* Making images responsive */
+img {width: 100%; height: auto; border: 1px solid #ccc; margin-top: 1em;}
+
+
+h1, h2, h3{font-weight: 900; padding:0; margin:0;}
+
+h1 {font-size: 1.875em; /*30px*/ 
+text-transform: uppercase; 
+margin-top: .5em;
+}
+
+h1 a, h1 a:visited, 
+a h3 , a:visited h3 {color: #444;}
+
+h1 a:hover,
+a:hover h3 {color: #ee2418;}
+
+h2 {font-size: 3.125em; /*50px*/
+line-height:1.1;  }
+
+h3 {font-size: 1.875em; /* 30px*/
+	line-height:1;
+	margin: 1.5em 0 0 0; 
+	
+}
+
+.work p {border-bottom: 2px solid #444; padding-bottom: 4em; margin-bottom: 3em; }
+.work p:last-child {border:none; padding: 0; margin: 0}
+
+
+ul, ol, dd { margin: 0;}
+ul li li, ol li li {margin: 0 0 0 1em;}
+
+
+nav ul, .more-info ul { 
+list-style: none; 
+list-style-image: none; 
+margin: 0 ; 
+padding: 0; }
+
+
+.main-nav {border-bottom: 3px solid #444; margin: 1em 0; padding: 0 0 1em 0; font-weight: 900;}
+.main-nav li { display: inline; padding: 0 1em 0 0; text-transform: uppercase; }
+.main-nav li a {color:#444;}
+.main-nav li a:hover, .main-nav li.active a {color:#ee2418; }
+
+.main-content {padding-bottom: 1em;}
+
+.more-info, .footer-info {
+border-top: 1px solid #000; 
+margin: .5em 0; 
+padding: .5em 0; 
+font-size: 0.875em;}/*14px*/	       
+
+.youtube {width: 30px; border: none;}
+   
+	          
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 42em) {
+body {max-width:58.75em;}	
+
+
+.banner {width: 100%; 
+margin-bottom: 2em; 
+padding-bottom: 1em;
+border-bottom: 3px solid #444;}
+
+h1 {font-size: 2.438em; /*39px*/  }
+
+
+h2 {font-size: 6.25em; /*100px*/ line-height: 1.15;
+margin-bottom:.2em; }
+
+.main-nav { 
+width: 15%; /* 140px/940px*/
+float: left; 
+border:none; 
+padding: 0; 
+margin: 1em 0 0 0;} 
+.main-nav li { display: block; padding: 0; margin: 0 0 .3em 0;  }
+
+
+.main-content {width: 83%; /*780px/940px*/
+float: right; 
+margin:0;}
+
+
+.wrap  {width: 100%; border-top: 3px solid #444; float: left; margin-top: 2em;}
+
+.more-info {float: right; border: none;} 
+.more-info li {display: inline; padding: 0 0 0 2em;}
+
+.footer-info {float: left;border: none; }
+
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+@media print {
+body { width: 100%; margin: 0; padding: 1em;  font-size: 12pt; line-height: 1.5; } 
+/*h1, h2, h3 { font-size: 14pt;}*/
+/* links */ 
+a:link, a:visited { color: #333; text-decoration: none; } 
+/* hide */ 
+.main-nav, .more-info {display: none;} 
+/* print URLs after articles 
+article p a:after { content: " (" attr(href) ")"; } */ 
+}
+
+
+
+
+
