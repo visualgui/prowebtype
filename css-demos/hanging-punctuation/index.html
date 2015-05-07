@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-US">
+    <head>      
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <title>Hanging Punctuation</title>  
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+				<link href='../prism/prism.css' rel='stylesheet' type='text/css'>
+		
+		<style>
+		
+		body {
+				font: 100%/1.6 'Libre Baskerville', serif;
+				text-align: left;  
+				padding: 1em 2em; margin:0 auto; 
+				font-weight: 400;
+				
+			}
+			
+		h1, h2 {font-weight: 700; font-family: 'PT Sans Narrow', sans-serif; text-transform: uppercase; letter-spacing: .1em;}	
+		
+		h1 { font-size: 1.5em; line-height: 1.1;}	
+		h2 {font-size: 1em; margin: 1.5em 0 .5em 0;  color: #999;}
+		footer {font-size: 0.813em; color: #666;}
+		
+		/*p { margin: 0 0 1em;}
+		p + p {text-indent: 1em; margin-top: -1em;  }*/
+		
+		blockquote p { color: #666;
+		hanging-punctuation: first;
+		text-indent: -0.5em;}
+		
+		
+	  ul, ol { margin: 0; padding: 0}
+	  
+		
+		@media only screen and (min-width: 40em) {	
+		body {font-size: 125%;
+			max-width: 50em;
+		}
+		
+		h1 {font-size: 5em; letter-spacing: 0.05em;}
+
+
+			}
+	
+		</style> 
+       
+  
+    </head>
+    <body>
+        
+      		
+      		
+      		  <h1>Hanging Punctuation</h1>
+      		  
+  
+		<p>Ellen Lupton’s <cite>Thinking with Type</cite>, (p.58):</p>
+		
+		<blockquote><p> “Hanging punctuation” prevents quotations and other marks from taking a bite out of the crisp left edge of a text block.</p></blockquote>
+
+		
+<h2>Syntax</h2>		 
+<pre><code class="language-css">blockquote p {
+	/*Currently not supported*/
+	hanging-punctuation: first; 
+	
+	/*fallback*/
+	text-indent: -0.5em;}</code></pre>
+	
+		 
+		  <h2>Avoid overpunctuating lists.</h2>
+		 
+		<p>A list is an inherently spacial and numerical arrangement. Speakers reciting lists often enumerate on their fingers, and lists set in type often call for equivalent typography gestures. This means that the list should be clarified as much as possible through spatial positioning and pointing, usually done with bullets, dashes or numerals. If the numbers are made visible either through prominence (e.g., by setting them in a contrasting face), additional punctuation—extra periods, parentheses or the like—should rarely be required.</p>
+		
+		<footer>Source: Robert Bringhurst’s <cite>The Elements of Typographic Style</cite>, (p.71)</footer>
+		
+		
+		<h2>Recommended Reading</h2>
+		<ul>
+   <li><cite>Detail In Typography</cite> by Jost Hochuli</li>
+   <li><cite>Inside Paragraphs: Typographic Fundamentals</cite> by Cyrus Highsmith</li>
+   <li><cite>Shaping Text: Type, Typography and the Reader</cite> by Jan Middendrop</li>
+</ul>
+
+
+<h2>Jan Tschichold’s New Typographic Rules</h2>
+<ol>
+<li>Fewest possible typefaces</li>
+<li>Fewest possible type sizes</li>
+<li>No letterspacing of lowercase (which was then still used for emphasis in German-speaking countries)</li>
+<li>Emphasis by using italic or bold of the same face</li>
+<li>Use of capitals only as an exception, then carefully letterspaced</li>
+<li>Format text lines into not more than three groups</li>
+</ol>
+		
+      		
+		
+<h2>Syntax</h2>			
+<pre><code class="language-css">ul, ol {margin: 0; padding: 0}</code></pre>
+		
+		
+<script src="../prism/prism.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-160735-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		    
+    </body>
+</html>

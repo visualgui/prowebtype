@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-US">
+    <head>      
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <title>Flexbox</title>  
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Roboto+Condensed:700,400' rel='stylesheet' type='text/css'>
+		<link href='../prism/prism.css' rel='stylesheet' type='text/css'>
+		<!--<script src="../js/prefixfree.min.js"></script>-->
+		
+		<style>
+		
+		body {
+				font: 100%/1.6 'Sorts Mill Goudy', serif;
+				font-weight: 400;
+				text-align: left;  
+				padding: 1em 2em; margin:0 auto; 	
+				font-variant-ligatures: common-ligatures;	
+				margin: auto;		
+			}
+			
+		
+		h1 {font-family: 'Roboto Condensed', sans-serif;
+			font-size: 8vw;
+			text-transform: uppercase;	
+			font-weight: 700;
+			line-height: 1;
+		}	
+		
+		h2 {font-weight: 400; line-height: 1.2; margin-bottom: 0;}
+		
+		
+		p {margin:0;}
+		
+		
+		.author {font-family: 'Roboto Condensed', sans-serif;
+			font-weight: 400; font-size: .813em; color: #999; letter-spacing: .2em; margin: .3em 0;
+		}
+		
+	
+	
+		img {
+			max-width: 100%;
+		}
+
+		.book {margin-bottom: 3em;}
+		
+		@media only screen and (min-width: 40em) {	
+		body {max-width: 80em;}
+		
+		
+		.books {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: stretch;
+			justify-content: space-between;
+			
+		}
+			
+		.book {
+			padding-right: 1em;			
+			flex:1;
+		}
+		
+		
+		/*h1{font-size: 5.9em; line-height: 1;}*/
+
+			}	
+			
+			
+				
+	
+		</style> 
+       
+  
+    </head>
+    <body>
+        
+      <main>
+      <h1>Typographic Books</h1>
+      
+       <div class="books">
+	   		
+	   		<div class="book">	   			
+	   			<img src="img/typographic-style.jpg" alt="The Elements of Typographic Style" />
+	   			<h2><cite>The Elements of Typographic Style</cite></h2>
+	   			<div class="author">ROBERT BRINGHURST</div>
+	   			<p>The essential type book to be read at least once a year.</p>
+	   		</div>
+
+	   		
+	   		<div class="book">	   			
+	   			<img src="img/thinking-with-type.jpg" alt="Thinking with Type" />
+	   			<h2><cite>Thinking With Type</cite></h2>
+	   			<div class="author">ELLEN LUPTON</div>
+	   			<p>A rare gem—a book on typography that is as thoughtfully explained as it is designed.</p>
+	   		</div>
+
+	   		<div class="book">	   			
+	   			<img src="img/mastering-type.jpg" alt="Mastering Type" />
+	   			<h2><cite>Mastering Type</cite></h2>
+	   			<div class="author">DENISE BOSLER</div>
+<p>From leading  to legibility, Bosler provides insightful guides and good-vs.-bad examples on typography.</p>
+	   		</div>
+	   
+	   </div>
+
+      
+      
+      </main>
+      
+      
+      		
+<pre><code class="language-css">.books {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: stretch;
+justify-content: space-between;
+}
+			
+.book {
+padding-right: 1em;			
+flex:1;
+}</code></pre>
+		
+		
+<script src="../prism/prism.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-160735-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		    
+    </body>
+</html>

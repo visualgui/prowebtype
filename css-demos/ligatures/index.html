@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+    <head>      
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <title>Ligatures</title>  
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,400' rel='stylesheet' type='text/css'>
+		<link href='../prism/prism.css' rel='stylesheet' type='text/css'>
+		
+		<style>
+		
+		body {
+				font: 100%/1.6 'Alegreya', serif;
+				
+				text-align: left;  
+				padding: 1em 2em; margin:0 auto; 				
+				font-variant-ligatures: common-ligatures;
+				
+				
+			}
+			
+			body, h1, h2, h3 {font-weight: 400;}
+			
+			h1 { line-height: 1; font-size: 4em; font-style: italic;}
+			
+			h2 {font-size: 2em; }
+			footer {font-size: 0.813em; color: #666;}
+			
+			@media only screen and (min-width: 40em) {	
+		body {font-size: 150%;
+			max-width: 40em;
+		}
+		
+		h1 {font-size: 5em;}
+		
+	
+
+			}
+
+	
+		</style> 
+       
+  
+    </head>
+    <body>
+        
+      		  <h1>Ligatures</h1>
+      		  
+  
+		
+	<h2><em>ff fi fl ffi ffl fk fh ft</em></h2>
+	
+	<p>In most roman faces the letter f reaches into the space beyond it. In most italics, the <em>f</em> reaches into the space on both sides. Typographers call these overlap <em>kerns</em>. Only a few kerns, like those in the arm of the <em>f</em> and the tail of the <em>j</em>, are implicit in a normal typefont, while others, like the overlap in the combination <em>To</em>, are optional refinements, dependent of the letterforms.</p>
+	<p>Reaching into the space in front of it, the arm of the f will collide with certain letters—b, f, h, i, j, k, l—and with question marks or parentheses, if these are in its way.</p> 
+	
+
+				
+		 <footer>Source: Robert Bringhurst’s <cite>The Elements of Typographic Style</cite>, (p.50)</footer>
+		
+		<h3>Syntax</h3>	
+<pre><code class="language-css">body {
+	font-variant-ligatures: common-ligatures;
+	}
+	</code></pre>
+		
+		
+<script src="../prism/prism.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-160735-1', 'auto');
+  ga('send', 'pageview');
+
+</script>		    
+    </body>
+</html>

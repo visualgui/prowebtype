@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-US">
+    <head>      
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <title>Small Caps</title>  
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Alegreya+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<link href='../prism/prism.css' rel='stylesheet' type='text/css'>
+		
+		<style>
+		
+		body {
+				font: 100%/1.6 'Alegreya Sans', sans-serif; 
+				text-align: left;  
+				padding: 1em 2em; margin:0 auto; 
+				font-weight: 400;
+				background: #fff;
+				color: #444;
+				font-weight: 300;
+			}
+		
+		h1 {font-weight: 400;  font-size: 1.5em; line-height: 1.1;  color:#f93;}	
+		
+		h2 {margin-bottom: 0;}
+		
+		p { margin: 0 0 1em 0; }
+		p + p {text-indent: 1em; margin-top: -1em;  }
+		
+	   footer {font-size: 0.813em; color: #666;}
+	   
+	   
+	  span {/*font-variant: common-ligatures, small-caps;*/ 
+	   font-family: 'Alegreya Sans SC', sans-serif; color: red;}
+
+		
+		@media only screen and (min-width: 35em) {	
+		
+		body {font-size: 150%;max-width: 35em;}
+		
+		h1 {font-size: 4em; margin-bottom: .3em;}
+		
+			}
+	
+		</style> 
+       
+  
+    </head>
+    <body>
+        
+      		
+      		
+      		  <h1><span>Small Caps</span></h1>
+      		  
+  <p>Genuine small caps are not simply shrunken versions of the full caps. They differ from large caps in stroke weight, letterfit and internal proportions as well as in height. Any good set of small caps is designed as such from the ground up. Thickening, shrinking and squashing the full caps with digital modification routines will only produce a parody.</p>
+  
+  <footer>Source: Robert Bringhurst’s <cite>The Elements of Typographic Style</cite>, (p.48)</footer>
+  
+      		
+		
+<h2>Example</h2>
+<p>Thus: 3:00 <span>am</span>, 3:00 <span>pm</span>, the ninth century <span>ce</span>, 450 <span>bc</span> to <span>ad</span> 450, the <span>oas</span> and <span>nato</span>; World War <span>ii</span> or <span>wwii</span>; but JFK and Fr J.A.S. O’Brien, <span>omi</span>; <span>hms</span> <em>Hypothesis</em> and <span>uss</span> <em>Ticonderoga</em>; Washington, DC, and Mexico, DF; J.S.Bach’s Prelude and Fugue in B♭ minor, <span>bwv</span> 867.</em>
+
+	  <footer>Source: Robert Bringhurst’s <cite>The Elements of Typographic Style</cite>, (p.48)</footer>	
+		 
+		
+		<h2>Syntax</h2>
+<pre><code class="language-css">span { font-variant: common-ligatures, small-caps; 
+/*fallback*/ font-family: 'Alegreya Sans SC', sans-serif;}</code></pre>
+		
+		
+<script src="../prism/prism.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-160735-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		    
+    </body>
+</html>
