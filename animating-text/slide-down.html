@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+    <head>      
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <title>Slide-Down Animation</title>  
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+		<script src="prefixfree.min.js"></script>
+		
+<style>
+		
+	body {
+			font: 100%/1.3 'Oswald', sans-serif; text-transform: uppercase; 
+			text-align: center;  
+			padding: 1em 2em; 
+			margin:0 auto; 
+			font-weight: 700;
+			background: #222;
+			color: #fff;	
+			}
+
+
+			
+	h1 {font-size: 3em; margin-top: 2em;}	
+	.web {color: #DF3651;}
+		
+
+
+
+h1{
+	animation-name: slideDown;
+	
+	animation-duration: 3s;	
+
+
+	animation-timing-function: ease;	
+						
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-300%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+
+
+
+		
+@media only screen and (min-width: 50em) {	
+	h1 {font-size: 8em; margin-top: 1em;}
+	}
+</style> 
+       
+  
+    </head>
+    <body>
+        	
+      		
+      		  <h1>PRO<span class="web">WEB</span>TYPE</h1>
+		
+
+    </body>
+</html>

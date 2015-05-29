@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-US">
+    <head>      
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <title>Expand Open</title>  
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+		<!--<script src="../js/prefixfree.min.js"></script>-->
+		
+<style>
+		
+	body {
+			font: 100%/1 'Oswald', sans-serif; text-transform: uppercase; 
+			text-align: center;  
+			padding: 1em 2em; 
+			margin:0 auto; 
+			font-weight: 700;
+			background: #222;
+			color: #fff;	
+			overflow:hidden;
+			}
+
+ 	
+		
+	h1 {font-size: 3em; margin-top: 2em; }	
+	.web {color: #DF3651;}
+	span {display: block; }
+	
+	
+h1{
+	animation-name: expandOpen;
+
+	animation-duration: 1.2s;	
+
+
+	animation-timing-function: ease-out;	
+
+
+
+}
+
+@keyframes expandOpen {
+	0% {
+		transform: scale(5);		
+	}
+	50% {
+		transform: scale(0.95);
+	}	
+	80% {
+		transform: scale(1.05);
+	}
+	90% {
+		transform: scale(0.98);
+	}	
+	100% {
+		transform: scale(1);
+	}			
+}
+
+
+		
+	
+		
+@media only screen and (min-width: 50em) {	
+	h1 {font-size: 8em; margin-top: 1em;}
+	}
+</style> 
+       
+  
+    </head>
+    <body>
+        	
+      		
+      		  <h1><span class="fade pro">PRO</span><span class="fade web">WEB</span><span class="fade type">TYPE</span></h1>
+		
+
+    </body>
+</html>
