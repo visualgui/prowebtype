@@ -1,3 +1,3 @@
 # prowebtype
 
-Typographic demos for Professional Web Typography
+Typographic demos for Professional Web Typography  
