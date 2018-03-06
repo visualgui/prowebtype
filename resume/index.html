@@ -1,56 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Donny Truong’s Resume</title>
+<title>Donny Truong’s Résumé</title>
 <meta name="author" content="donny truong" />
-<meta name="copyright" content="visualgui.com" />
+<meta name="copyright" content="donnytruong.com" />
 
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro:400,400italic:latin', 'Source+Serif+Pro:400,700:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i|Spectral:400,700" rel="stylesheet">
 
 <style>
+body, h3 {font-family: 'Spectral', serif;}
+h1,  h2,  h4, time, .location,  .contact, [role="complementary"] {font-family: 'Nunito Sans', sans-serif;}
 
-body, h1, h3 {font-family: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;}
-h2, h4, time, .location, .contact, [role="complementary"] {font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica , Arial, sans-serif;}
 
-body { background: #fff; color:#444; font-size: 100%; font-variant-ligatures: common-ligatures; font-weight: 400; line-height:1.4; margin: auto; padding: 2em;  text-align: left;}
-h1 {font-size:4em;  margin:.5em 0 0 0; line-height:1; padding-bottom: .2em; font-weight: 700; } 
-h2 {font-size:1.3em; line-height:1;  padding:0; margin: 0; color:#999; font-weight: 400; text-transform: uppercase; letter-spacing: .05em;} 
-h3 {font-size:1.6em; padding:0; margin:.5em 0 0 0; line-height:1.2; font-weight: 700; }
-h4 {font-size:1.2em; padding:0; margin:.3em 0 .5em 0; line-height:1.2; font-weight: 400;}
+
+
+body { background: #fff; color:#444; font-size:125%; font-weight: 400; line-height:1.25; margin: 0 auto; padding: 1em;  text-align: left; font-kerning: normal; font-variant-ligatures: common-ligatures, contextual; font-feature-settings: "kern", "liga", "clig", "calt", "salt"; }
+h1 {font-size:2em;  margin:.5em 0 0 0; line-height:1; padding-bottom: .2em; font-weight: 700; text-transform: uppercase;} 
+h2 {font-size:1.2em; line-height:1;  padding:0; margin: 0; color:#999; font-weight: 400; text-transform: uppercase; letter-spacing: .06em;} 
+h3 {font-size:1.4em; padding:0; margin:.5em 0 0 0; line-height:1; font-weight: 700;  }
+h4 {font-size:1em; padding:0; margin:.5em 0; line-height:1.1; font-weight: 400; text-transform: uppercase;}
 time, .location {color: #999; display: inline;}
-
-time {  border-right: 1px solid #f1f1f1; margin-right: .5em; padding-right: .5em; }
+time {  border-right: 1px solid #ccc; margin-right: .5em; padding-right: .5em; }
 section {margin-bottom: 2em;}
 ul { list-style:none; list-style-image: none; margin: 0; padding: 0; }
-li {margin: .6em 0;}
-header li {margin: 0; color: #999;}
-a:link { color:#DF3651; text-decoration:none; }
-a:visited { color: #DF3651; }
+li {margin: .5em 0;}
+header li, .pubs li {margin: 0; color: #999;}
+.pubs ul {margin-top: .5em;}
+
+a:link, a:active, a:visited { color:#DF3651; text-decoration:none; }
 a:hover { color: #000; }
 a:focus { outline: thin dotted; }
 a:hover, a:active { outline: 0; }
-[role="complementary"] {font-size: 87.5% /*14px*/; }
+abbr {font-variant-caps: all-small-caps;font-feature-settings: "c2sc", "smcp"; text-decoration: none;}
+
+
 
 @media only screen and (min-width: 45em) {
-body {max-width:58.75em /*940px*/;}	
-[role="banner"], .wrap {width: 100%;} 
-[role="main"] {float: left; width: 66% /*620px*/;}
-[role="complementary"] {float: right; width: 32% /*300px*/; }
+body {max-width:60em;}
+
+[role="banner"] {margin: 2em 0 3em 0;}
+
+header li {display: inline; margin-right: 1em;}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
+  }
+
+
+
 }
+
+@media print {
+ body {font-size: 93.8%; padding: 0; margin: 0;}
+ main ul {font-size: 100%;}
+a:link, a:active, a:visited, a:hover { color:#444; text-decoration:none; }
+.download {display: none;}
+
+ 
+ /*same as desktop view*/
+header li {display: inline; margin-right: 1em;}
+.wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;
+  }
+
+ }
+
 
 </style>
 
@@ -65,9 +85,8 @@ body {max-width:58.75em /*940px*/;}
 	  <h1>Donny Truong</h1>
 	  	<section class="contact">
 	  		<ul>
-	  			<li>Web: <a href="https://www.visualgui.com/">visualgui.com</a></li>
-	  			<li>Phone: <a href="tel:8453372187">845-337-2187</a></li>
-	  			<li>Email: <a href="mailto:donny@visualgui.com">donny@visualgui.com</a></li>
+	  			<li>Web: <a href="https://donnytruong.com/">donnytruong.com</a></li>
+		  		<li>Email: <a href="mailto:donny@donnytruong.com">donny@donnytruong.com</a></li>
 			</ul>
 		</section>
  	</header>
@@ -78,15 +97,17 @@ body {max-width:58.75em /*940px*/;}
 		<header id="experience"><h2>Experience</h2></header>
 	
 			<section>
-				<h3>Senior Web Services Developer</h3>
-				<h4><a href="http://www.law.gmu.edu">The George Mason University School of Law</a></h4>
+				<h3>Director of Design & Web Services</h3>
+				<h4>George Mason University Antonin Scalia Law School</h4>
 				<time>October 2011 – Present</time>
 				<div class="location">Arlington, VA</div>
 				<ul>
-					<li>In charge of the Law School’s user experience design, front-end development, content management system, and server administration.</li>
-					<li>Lead the complete redesign of the Law School’s web presence: rewrite HTML, CSS, and JavaScript to improve performance and create responsive layout to provide an optimal experience across multiple devices.</li>
-					<li>Implement and manage WordPress Multisite to provide faculty, students, and the Law School’s members an easy-to-use online platform.</li>
-					<li>Oversee system administration: update and secure Linux web servers.</li>
+					<li>Worked with deans on the branding and messaging for the law school.</li>
+					<li>Collaborated with admissions associate dean  on print marketing designs and digital strategies for recruitments.</li>					
+					<li>Worked with associate dean of alumni relations and third-party vendors to design an online community for alumni members.</li>
+					<li>Led front-end design and back-end development to create  comprehensive, usable, and accessible web experiences.</li>
+					<li>Advised and consulted with members of the law school community on their design and technology needs.</li>
+					<li>Supervised a back-end web developer.</li>
 				</ul>
 			</section>
 
@@ -95,37 +116,38 @@ body {max-width:58.75em /*940px*/;}
 
 			<section>
 				<h3>Senior Web Developer</h3>
-				<h4><a href="http://business.gwu.edu">The George Washington University School of Business</a></h4>
+				<h4>George Washington University School of Business</h4>
 				<time>January 2008 – October 2011</time>
 				<div class="location">Washington, DC</div>
 				<ul>
-					<li>In charged of the Business School’s user experience design, content strategy, front-end development, and unify web presence to ensure GW’s established brand.</il>
-					<li>Designed and published the responsive digital version of the school’s printed magazine.</li>
-					<li>Customized and managed WordPress as an easy-to-publish news system to integrate new media marketing efforts into the school’s overall strategy.</li>
+					<li>Led user experience design, front-end development, and content strategy  for the business school.</li>
+					<li>Researched, designed, and published the online version of the school’s magazine.</li>
+					<li>Customized and managed WordPress as an easy-to-publish news system.</li>
+					<li>Integrated new media marketing efforts into the school’s overall strategy.</li>
 				</ul>
 			</section>
 
 
 			<section>
 				<h3>Senior Web Designer</h3>
-				<h4><a href="http://www.vassar.edu">Vassar College</a></h4>
+				<h4>Vassar College</h4>
 				<time>August 2002 – January 2008</time>
 				<div class="location">Poughkeepsie, NY</div>
 				<ul>
-					<li>Designed and developed unique web experience to meet the specific needs of each academic department and its users.</li>
-					<li>Contributed in enhancing the online experience of Vassar’s established brand and collaborated with a team of talented designers and developers to maintain over 200 web sites.</li>
+					<li>Designed and developed web experiences to meet the specific needs of the academic departments and their  users.</li>
+					<li>Contributed in enhancing the online experience of Vassar’s established brand.</li> 
+					<li>Collaborated with a team of talented designers and developers to maintain and improve more than 200 websites.</li>
 				</ul>
 			</section>
 	</main>
  	
 
 	<aside role="complementary">
-		<header id="publication"><h2>Publications</h2></header>
-			<section>
+		<header id="publications"><h2>Publications</h2></header>
+			<section class="pubs">
 				<ul>
 					<li><cite><a href="https://vietnamesetypography.com/">Vietnamese Typography</a></cite> (2016)</li>
 					<li><cite><a href="https://prowebtype.com/">Professional Web Typography</a></cite> (2015)</li>
-					
 				</ul>
 			</section>
 	
@@ -134,26 +156,26 @@ body {max-width:58.75em /*940px*/;}
 		<header id="academics"><h2>Academics</h2></header>
 			<section>
 				<h3>Adjunct Professor</h3>
-				<h4><a href="http://www.soa.gmu.edu">The George Mason University School of Arts</a></h4>
-				<time>August 2014 – Present</time>
+				<h4>George Mason University School of Arts</h4>
+				<time>2014 – 2015</time>
 				<div class="location">Fairfax, VA</div>
 				<ul>
-					<li>Teach courses in advanced web design and usability to upper undergraduate and graduate students.</li> 
+					<li>Taught Introduction to Web Design, Web Design & Usability, and Advanced Web Design.</li> 
 				</ul>
 			</section>
 
 
 			<section>
-				<h3>MA, Graphic Design</h3>
-				<h4><a href="http://www.gmu.edu">The George Mason University</a></h4>
-				<time>August 2012 - December 2015</time>
+				<h3><abbr title="Master of Arts">MA</abbr>, Graphic Design</h3>
+				<h4>George Mason University</h4>
+				<time>2012 – 2015</time>
 				<div class="location">Fairfax, VA</div>
 			</section>
 
 			<section>
-				<h3>BA, Digital Arts & Multimedia Design</h3>
-				<h4><a href="http://www.lasalle.edu">La Salle University</a></h4>
-				<time>August 1997 - June 2001</time>
+				<h3><abbr title="Bachelor of the Arts">BA</abbr>, Digital Arts & Multimedia Design</h3>
+				<h4>La Salle University</h4>
+				<time>1997 – 2001</time>
 				<div class="location">Philadelphia, PA</div>
 			</section>
 
@@ -163,17 +185,15 @@ body {max-width:58.75em /*940px*/;}
 		<header id="skills"><h2>Skills</h2></header>
 			<section>
 				<ul>
-					<li><em>Web Design:</em> web standards, accessibility, usability, typography & UX design</li>
-					<li><em>Mobile:</em>  responsive web design, jQuery Mobile development & UI design</li>
-					<li><em>Web Development:</em>  HTML, CSS, Sass, JavaScript, PHP, MySQL, WordPress & MODX</li>
-					<li><em>Adobe:</em> Photoshop, Illustrator, InDesign & Flash</li>
-					<li><em>Server Administration:</em>  Linux (Red Hat & CentOS), Apache & command lines</li>
+					<li><strong>Web Design:</strong> accessibility, responsive design, typography, usability, and web standards.</li>
+					<li><strong>Web Development:</strong>  <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="Syntactically Awesome Stylesheets">Sass</abbr>, JavaScript, <abbr title="Hypertext Preprocessor">PHP</abbr>, <abbr title="Structured Query Language">MySQL</abbr>, <abbr>MODX</abbr>, and WordPress.</li>
+					<li><strong>Graphic Design:</strong>  Photoshop, Illustrator, and InDesign.</li>
+					<li><strong>Server Administration:</strong>  Linux Red Hat, Apache, and command line.</li>
 				</ul>
 			</section>
 	</aside>
 </div><!--/wrap-->
 
 
-
 </body>
-</html>
+</HTML>
